@@ -125,7 +125,11 @@ pg_dumpall --no-owner -h $SERVER_URL -U $SERVER_USER ./backups/$BACKUP_SQL
 
 > ... This error is **harmless** and **should be ignored**. ...
 
-...🤨
+...🤨 <br>
+pg_dumpall으로 생성한 sql 스크립트는 role이 중복될 경우 에러가 발생할 수 있습니다. 이래서 documentation을 잘 읽어야 합니다.
+
+![KakaoTalk_Image_2022-07-04-23-17-55](https://user-images.githubusercontent.com/19154301/177173395-57fc7f51-f210-43ec-afe7-533dca88586f.jpeg)
+
 
 결국 이미지의 docker-entrypoint.sh가 dump뜬 sql 스크립트를 직접 실행하지 않도록 복구 스크립트를 작성하고, Dockerfile을 수정합니다.
 
