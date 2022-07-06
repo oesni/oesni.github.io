@@ -9,7 +9,7 @@ tags:
   - Postgresql
   - DB
 date: 2022-07-04 20:52 +0900
-last_modified_at: 2022-07-04 20:52 +0900
+last_modified_at: 2022-07-06 21:49 +0900
 published: true
 ---
 
@@ -192,3 +192,5 @@ services:
 ```
 
 정리된 내용은 아래 repository에서 확인 가능합니다.
+
+[https://github.com/oesni/dockerize-postgres](https://github.com/oesni/dockerize-postgres)
